@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        sh '#!bin/bash'
+        git(url: 'https://github.com/saiprasanthi/jenkinswar.git', branch: 'master', credentialsId: 'saiprasanthi')
       }
     }
   }
