@@ -8,7 +8,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        sh '!#bin/bash'
+        sh '#!bin/bash'
       }
     }
   }
